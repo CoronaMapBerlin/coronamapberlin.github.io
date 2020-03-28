@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Berlin gegen Corona</title>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link href='style.css' rel='stylesheet'>
+</head>
+
+<body>
+	<div class="grid">
+
+
+	  	<div class="head"> 
+	  		<div class="containertitle">
+				<h2></h2>
+			</div>
+		</div>
+
+
+	  	<div class="data">
+	  			<h1>Corona Map</h1>
+	  			<br>
+	  		<table style="width: 100%;" class="">
+			<tr>
+				<th colspan='3'>
+					<div class="card" style="line-height: normal; padding: 1px;">
+						<h2 id="place" class="nooverlaping">-</h2>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="card">
+						<div class="confirmed">
+							<h1 id="confirmed">-</h1>
+						</div>
+						<div class="container">
+							<p>confirmed</p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class="card">
+						<div class="recovered">
+							<h1 id="recovered">-</h1>
+						</div>
+						<div class="container">
+							<p>recovered</p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class="card">
+						<div class="deaths">
+							<h1 id="deaths">-</h1>
+						</div>
+						<div class="container">
+							<p>deaths</p>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p style="color: #ededed">of <a id="pop"></a></p>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+			</tr>
+			</table>
+	  	</div>
+
+
+	  	<div class="map">
+	  		<div id="map" class="berlin">
+			</div>
+	  	</div>
+		<div class="undermap">
+		</div>   
+    	<div class="item footer">
+    		<p style="color: #ABB2B9; font-size: 10px">
+				Updated on <a id="update"> </a>;
+				Data Source: 
+				<a style="color: #AED6F1" href="https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html">Robert Koch Institut </a>
+				; beta version
+			</p>
+    	</div>
+	</div>
+<script src="raphael-min.js"></script>
+<script src="map.js"></script>
+</body>
+
+</html>
